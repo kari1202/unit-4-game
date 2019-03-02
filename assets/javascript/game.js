@@ -33,8 +33,6 @@ function recordCrystal(shape) {
         switch(shape) {
             case "diamond" :
                 total += diamondRandom;
-                console.log("Diamond random is " + diamondRandom);
-                console.log("Hit diamond and total is " + total);
                 break;
             case "triangle" :
                 total += triangleRandom;
@@ -55,8 +53,6 @@ function recordCrystal(shape) {
             lostGame();
         }
 
-        console.log("This is working!");
-        console.log("I've got a " + shape);
     } else {
         alert("You must start the game first by clicking the 'Start Game' button");
         }
@@ -74,7 +70,7 @@ function startGame() {
     squareRandom = Math.floor((Math.random() * 12) + 1);
 
     $("#display-random").text(randomNumber);
-    console.log("Random number is " + randomNumber);
+    $("#display-total").text(total);
 
 }
 
